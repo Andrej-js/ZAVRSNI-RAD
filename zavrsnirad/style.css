@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+  padding: 30px;
+  background-image: url(./slike/slika1.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  pointer-events: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #aa5e5e, -3px 3px 0 #5e82aa,
+    3px 3px 0 #000;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  overflow: visible;
+}
+body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0,
+    transparent 10px,
+    #eee 10px,
+    #eee 15px,
+    transparent 15px,
+    transparent 25px,
+    #eee 25px,
+    #eee 30px,
+    transparent 30px
+  );
+}
+.container h2 {
+  font-size: 32px;
+  font-family: "Caveat", cursive;
+}
+.container h3 {
+  font-size: 32px;
+  font-family: "Caveat", cursive;
+  margin-left: 60%;
+}
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 10px groove rgb(16, 114, 206);
+  width: 100%;
+  height: 350px;
+  gap: 60px;
+  margin: auto;
+}
+.start a {
+  text-decoration: none;
+  color: white;
+  background: #288dd1;
+  font-weight: 700;
+  padding: 40px;
+  border-radius: 8px;
+  font-family: "Outfit", sans-serif;
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 40px;
+  text-shadow: 4px 4px 0 #000, 4px 4px 0 #000, 4px 4px #000, 4px 4px #000;
+  transition: all 0.1s ease-in;
+}
+
+.start a:hover {
+  color: #288dd1;
+  background: white;
+  transform: translateY(-5px);
+  cursor: pointer;
+  text-shadow: none;
+  border: 2px solid #288dd1;
+  box-shadow: 0 5px 5px 0 rgb(66, 140, 236);
+}

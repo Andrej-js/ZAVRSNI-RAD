@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You for Playing</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #b3defc; /* Catchy background color */
+        color: #fff; /* Text color */
+        font-family: "Outfit", sans-serif;
+      }
+
+      /* Striped pattern for the background */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          #fff 10px,
+          #fff 20px
+        );
+        opacity: 0.1;
+        pointer-events: none;
+      }
+
+      .catchy-text {
+        font-size: 100px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #aa5e5e, -3px 3px 0 #8ab8f0,
+          3px 3px 0 #000;
+        font-family: "Outfit", sans-serif;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+      }
+
+      .dugmad {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 155px;
+      }
+
+      .dugmad a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #4785d1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: "Rubik", sans-serif;
+        font-size: 50px;
+        transition: background-color 0.3s ease;
+      }
+
+      .dugmad a:hover {
+        background-color: #1d3b57;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="catchy-text">HVALA NA IGRANJU!</div>
+    <div class="dugmad">
+      <a href="/zavrsnirad/index.html">VRATI SE</a>
+      <a href="/zavrsnirad/game.html">IGRAJ OPET</a>
+    </div>
+  </body>
+</html>

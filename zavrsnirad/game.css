@@ -1,0 +1,161 @@
+#igra {
+  justify-content: center;
+  align-items: center;
+}
+#pitanje {
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-size: 40px;
+
+  font-weight: 1000;
+  border: 4px solid black;
+  margin: auto auto;
+  width: 90%;
+  margin-bottom: 30px;
+  background: rgb(196, 230, 250);
+  border-radius: 4px;
+}
+body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0,
+    transparent 10px,
+    #eee 10px,
+    #eee 15px,
+    transparent 15px,
+    transparent 25px,
+    #eee 25px,
+    #eee 30px,
+    transparent 30px
+  );
+  background-size: 20px 20px;
+}
+.odabir-container {
+  text-decoration: none;
+  color: white;
+  background: #288dd1;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Outfit", sans-serif;
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 29px;
+  text-shadow: 4px 4px 0 #000, 4px 4px 0 #000, 4px 4px #000, 4px 4px #000;
+  transition: all 0.1s ease-in;
+  margin: auto auto;
+  width: 75%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.odabir-container:hover {
+  color: #288dd1;
+  background: white;
+  transform: translateY(-5px);
+  cursor: pointer;
+  text-shadow: none;
+  border: 2px solid #288dd1;
+  box-shadow: 0 5px 5px 0 rgb(66, 140, 236);
+}
+.odabir-sve {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.prefix {
+  text-decoration: none;
+  color: #288dd1;
+  background: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Outfit", sans-serif;
+  border: 2px solid #288dd1;
+  font-size: 29px;
+  text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px #000, 2px 2px #000;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tekst {
+  padding: 10px;
+  width: 100%;
+}
+.correct {
+  background: #7eeb3e;
+}
+.incorrect {
+  background: #f14545;
+}
+.correct:hover {
+  background: #7eeb3e;
+  border: 2px solid white;
+  color: white;
+  text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px #000, 2px 2px #000;
+}
+.incorrect:hover {
+  background: #f14545;
+  border: 2px solid white;
+  color: white;
+  text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px #000, 2px 2px #000;
+}
+#hud {
+  display: flex;
+}
+#hud-item {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.hud-prefix {
+  color: black;
+  -webkit-text-stroke: 1px #000;
+  font-size: 40px;
+  font-family: "Outfit", sans-serif;
+}
+.hud-main-text {
+  color: black;
+  font-size: 40px;
+  font-family: "Outfit", sans-serif;
+}
+#loader {
+  border: 10px solid rgb(184, 184, 184);
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border-top: 10px solid black;
+  animation: spin 3s linear infinite;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+}
